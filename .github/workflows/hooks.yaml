@@ -1,8 +1,7 @@
 # workflow triggers
 on:
   repository_dispatch:
-    types:
-      - webhook
+    types: [add_icon, webhook]
 jobs:
   deploy:
     runs-on: ubuntu-18.04
