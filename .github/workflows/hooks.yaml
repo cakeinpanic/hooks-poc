@@ -3,7 +3,7 @@ on:
   repository_dispatch:
     types: [add_icon, webhook]
 jobs:
-  deploy:
+  runMe:
     runs-on: ubuntu-18.04
     steps:
-      - run: echo ${{github.event.client_payload}}
+      - run: echo "${{github.event.client_payload.data}}"
