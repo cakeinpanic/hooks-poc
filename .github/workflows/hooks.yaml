@@ -1,0 +1,10 @@
+# workflow triggers
+on:
+  repository_dispatch:
+    types:
+      - webhook
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - run: "hello"
